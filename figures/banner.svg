@@ -1,39 +1,24 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0a0e1a;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#1a1035;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#0a0e1a;stop-opacity:1" />
+      <stop offset="0%" stop-color="#0a0e1a" stop-opacity="1" />
+      <stop offset="50%" stop-color="#1a1035" stop-opacity="1" />
+      <stop offset="100%" stop-color="#0a0e1a" stop-opacity="1" />
     </linearGradient>
     <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#818CF8;stop-opacity:0" />
-      <stop offset="50%" style="stop-color:#C4B5FD;stop-opacity:0.6" />
-      <stop offset="100%" style="stop-color:#818CF8;stop-opacity:0" />
+      <stop offset="0%" stop-color="#818CF8" stop-opacity="0" />
+      <stop offset="50%" stop-color="#C4B5FD" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#818CF8" stop-opacity="0" />
     </linearGradient>
     <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#C4B5FD" />
-      <stop offset="50%" style="stop-color:#E9D5FF" />
-      <stop offset="100%" style="stop-color:#C4B5FD" />
+      <stop offset="0%" stop-color="#C4B5FD" />
+      <stop offset="50%" stop-color="#E9D5FF" />
+      <stop offset="100%" stop-color="#C4B5FD" />
     </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-    <filter id="softGlow">
-      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
   </defs>
 
   <rect width="1200" height="300" fill="url(#bg)" rx="12"/>
 
-  <!-- Stars -->
   <circle cx="90" cy="70" r="2" fill="#C4B5FD" opacity="0.4"/>
   <circle cx="210" cy="210" r="1.5" fill="#818CF8" opacity="0.3"/>
   <circle cx="340" cy="45" r="1" fill="#E9D5FF" opacity="0.5"/>
@@ -49,8 +34,7 @@
   <circle cx="780" cy="40" r="1" fill="#C4B5FD" opacity="0.4"/>
   <circle cx="1020" cy="255" r="1.5" fill="#818CF8" opacity="0.3"/>
 
-  <!-- Left decorative: data flow / branching nodes -->
-  <g transform="translate(140, 150)" opacity="0.15" filter="url(#softGlow)">
+  <g transform="translate(140, 150)" opacity="0.2">
     <circle cx="0" cy="0" r="8" fill="#C4B5FD" opacity="0.4"/>
     <circle cx="-40" cy="-35" r="5" fill="#818CF8" opacity="0.5"/>
     <circle cx="40" cy="-35" r="5" fill="#818CF8" opacity="0.5"/>
@@ -68,8 +52,7 @@
     <line x1="40" y1="35" x2="70" y2="0" stroke="#818CF8" stroke-width="0.5" opacity="0.3"/>
   </g>
 
-  <!-- Right decorative: three strategy paths -->
-  <g transform="translate(1060, 150)" opacity="0.15" filter="url(#softGlow)">
+  <g transform="translate(1060, 150)" opacity="0.2">
     <circle cx="0" cy="-50" r="5" fill="#C4B5FD" opacity="0.5"/>
     <circle cx="0" cy="0" r="8" fill="#C4B5FD" opacity="0.4"/>
     <circle cx="0" cy="50" r="5" fill="#C4B5FD" opacity="0.5"/>
@@ -85,12 +68,10 @@
     <line x1="0" y1="0" x2="50" y2="25" stroke="#818CF8" stroke-width="0.5" opacity="0.3"/>
   </g>
 
-  <!-- Center icon: brain / thought -->
-  <g transform="translate(600, 75)" filter="url(#softGlow)" opacity="0.7">
+  <g transform="translate(600, 75)" opacity="0.7">
     <circle cx="0" cy="0" r="18" fill="none" stroke="#C4B5FD" stroke-width="1" opacity="0.5"/>
     <circle cx="0" cy="0" r="10" fill="none" stroke="#E9D5FF" stroke-width="0.8" opacity="0.4"/>
     <circle cx="0" cy="0" r="4" fill="#C4B5FD" opacity="0.4"/>
-    <!-- Thought rays -->
     <line x1="0" y1="-18" x2="0" y2="-28" stroke="#E9D5FF" stroke-width="0.8" opacity="0.5"/>
     <line x1="12.7" y1="-12.7" x2="19.8" y2="-19.8" stroke="#E9D5FF" stroke-width="0.8" opacity="0.4"/>
     <line x1="18" y1="0" x2="28" y2="0" stroke="#E9D5FF" stroke-width="0.8" opacity="0.5"/>
@@ -101,20 +82,14 @@
     <line x1="-12.7" y1="-12.7" x2="-19.8" y2="-19.8" stroke="#E9D5FF" stroke-width="0.8" opacity="0.4"/>
   </g>
 
-  <!-- Accent line -->
   <rect x="0" y="282" width="1200" height="2" fill="url(#accent)"/>
 
-  <!-- Title -->
-  <text x="600" y="158" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="48" font-weight="300" fill="url(#textGrad)" letter-spacing="6" filter="url(#glow)">
+  <text x="600" y="158" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="48" font-weight="300" fill="url(#textGrad)" letter-spacing="6">
     Generator for Reasoning
   </text>
-
-  <!-- Subtitle -->
   <text x="600" y="198" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="14" fill="#A78BFA" letter-spacing="4" opacity="0.8">
     ADAPTIVE  REASONING  DATASET  GENERATION  PIPELINE
   </text>
-
-  <!-- Tags -->
   <text x="600" y="238" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#818CF8" letter-spacing="2" opacity="0.5" font-style="italic">
     Cerebras API  ·  Qwen-3-235B  ·  CoT / PoT / SkipThinking
   </text>

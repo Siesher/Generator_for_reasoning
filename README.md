@@ -1,6 +1,6 @@
 <div align="center">
 
-![Generator for Reasoning Banner](figures/banner.svg)
+<img src="figures/banner.svg" alt="Generator for Reasoning Banner" width="100%">
 
 # 🧠 Generator for Reasoning
 
